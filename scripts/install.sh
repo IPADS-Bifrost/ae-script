@@ -26,7 +26,7 @@ else
     fi
 fi
 
-cd $dpdk_path && git checkout $dpdk_commit && meson build
+cd $dpdk_path && git checkout $dpdk_commit && meson --reconfigure build
 sudo ninja -C build install
 cd $ovs_path && git checkout $ovs_commit
 ./boot.sh

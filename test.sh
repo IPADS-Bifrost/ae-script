@@ -51,6 +51,10 @@ mode=$3
 [[ $mode == 'vgo' ]] && path_to_kernel=$assets/prpr-bzImage
 [[ $mode == 'ngo' ]] && path_to_kernel=$assets/bifrost-bzImage
 [[ $mode == 'ngnp' ]] && path_to_kernel=$assets/noprot-bzImage
+[[ $mode == 'ngonp' ]] && path_to_kernel=$assets/noprot-bzImage
+[[ $mode == 'nbd' ]] && path_to_kernel=$assets/zcionuma-breakdown-bzImage
+[[ $mode == 'vgbd' ]] && path_to_kernel=$assets/prpr-breakdown-bzImage
+[[ $mode == 'ngbd' ]] && path_to_kernel=$assets/bifrost-breakdown-bzImage
 [[ $mode == 'nobd' ]] && path_to_kernel=$assets/zcionuma-breakdown-bzImage
 [[ $mode == 'vgobd' ]] && path_to_kernel=$assets/prpr-breakdown-bzImage
 [[ $mode == 'ngobd' ]] && path_to_kernel=$assets/bifrost-breakdown-bzImage
